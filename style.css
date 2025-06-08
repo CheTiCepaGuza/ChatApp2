@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Edu SA Hand", cursive;
+}
+
+body {
+  background-color: #222;
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 6.66% 30% 3.33% 30% 30%;
+}
+
+#wlc {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  background-color: gray;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    border: solid 5px white;
+}
+
+#help {
+  margin-top: 10px;
+  grid-column: 2 / 3;
+  grid-row: 2 / 5;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border: solid 5px white;
+  border-radius: 10px;
+}
+
+#inputSec {
+  display: flex;
+  background-color: rgb(43, 27, 27);
+  color: #000;
+  gap: 10px;
+  margin-bottom: 5px;
+  padding: 3px;
+
+}
+
+#msg {
+  flex: 1;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#send {
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+#chatBox {
+  font-size: 25px;
+  flex: 1; /* Това казва: "вземи останалото пространство" */
+  background-color: rgb(43, 27, 27);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow-y: auto;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: none;
+  
+}
+
+.server{
+
+    background-color: rgb(255, 0, 0);
+    align-self: flex-start;
+
+}
+.client{
+
+    background-color: blue;
+    align-self: flex-end;
+
+
+}
+
+.client, .server{
+
+    padding: 3px;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
